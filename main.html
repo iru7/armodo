@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armodo</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section id="banner" class="row">
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="discount" class="row">
+            <div class="col-12 col-md-12">
+                <a href="" title=""><span id="row_discount">-10% na pierwsze zakupy</span></a>
+            </div>
+            <div class="col-12 col-md-12">
+                <a href="" title=""><span id="row_newsletter">Zapisz się do newslettera</span></a>
+            </div>
+            <div class="col-12 col-md-12">
+                <a href="" class="button">otrzymaj rabat</a>
+            </div>
+        </section>
+
+        <section id="menu_fotter" class="row">
+            <nav class="col-12 navigaction">
+                <ul class="class">
+                    <li id="menu"><a href="">HOME</a>
+                        <ul id="podmenu" class="podmenu">
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+    </footer>
+    <script>
+    $(document).ready(function(){
+$('#menu').click(function(){
+$('#podmenu').stop().slideToggle(300);
+});
+});
+    </script>
+</body>
+
+</html>
