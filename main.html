@@ -8,7 +8,8 @@
     <title>Armodo</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -18,6 +19,28 @@
         <nav></nav>
     </header>
     <main>
+        <section class="row">
+            <div class="slider_main multiple-items col-12 col-md-12">
+                <div class="items">
+                    <a href="" title=""><img src="./img/slider_main.png" alt="" /><span>Slider1</span></a>
+                </div>
+                <div class="items">
+                    <a href="" title=""><img src="./img/slider_main.png" alt="" /><span>Slider2</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="slider_partners multiple-items col-12 col-md-12">
+                <div class="items">
+                    <a href="" title=""><img src="./img/partners1.png" alt="" /></a>
+                    <a href="" title=""><img src="./img/partners2.png" alt="" /></a>
+                    <a href="" title=""><img src="./img/partners3.png" alt="" /></a>
+                    <a href="" title=""><img src="./img/partners4.png" alt="" /></a>
+                    <a href="" title=""><img src="./img/partners5.png" alt="" /></a>
+                    <a href="" title=""><img src="./img/partners6.png" alt="" /></a>
+                </div>
+            </div>
+        </section>
         <section id="banner" class="row">
             <div class="col-6 col-md-4">
                 <a href="" title=""><img src="./img/banner.png" alt="" /><span>Banner reklamowy</span></a>
@@ -39,41 +62,67 @@
             </div>
         </section>
     </main>
+
     <footer>
         <section id="discount" class="row">
             <div class="col-12 col-md-12">
-                <a href="" title=""><span id="row_discount">-10% na pierwsze zakupy</span></a>
+                <a id="row_discount" href="" title=""><span>-10% na pierwsze zakupy</span></a>
             </div>
             <div class="col-12 col-md-12">
-                <a href="" title=""><span id="row_newsletter">Zapisz się do newslettera</span></a>
+                <a id="row_newsletter" href="" title=""><span>Zapisz się do newslettera</span></a>
             </div>
             <div class="col-12 col-md-12">
                 <a href="" class="button">otrzymaj rabat</a>
             </div>
         </section>
-
         <section id="menu_fotter" class="row">
-            <nav class="col-12 navigaction">
-                <ul class="class">
-                    <li id="menu"><a href="">HOME</a>
-                        <ul id="podmenu" class="podmenu">
-                            <li><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+            <ul id="menu" class="navigaction">
+                <li class="col-12 col-md-3">Moje zamówienie
+                    <ul class="submenu">
+                        <li class=""><a href="">Status zamówienia</a></li>
+                        <li><a href="">Śledzenie zamówienia</a></li>
+                        <li><a href="">Chcę zareklamować towar</a></li>
+                        <li><a href="">Chcę zwrócić towar</a></li>
+                        <li><a href="">Chcę wymienić towar</a></li>
+                   </ul>
+                </li>
+                <li class="col-12 col-md-3">Moje konto
+                    <ul class="submenu">
+                        <li class=""><a href="">Zarejestruj się</a></li>
+                        <li><a href="">Moje zamówienia</a></li>
+                        <li><a href="">Koszyk</a></li>
+                        <li><a href="">Ulubione</a></li>
+                        <li><a href="">Historia transakcji</a></li>
+                        <li><a href="">Moje rabaty</a></li>
+                        <li><a href="">Newsletter</a></li>
+                   </ul>
+                </li>
+                <li class="col-12 col-md-3">Regulaminy
+                    <ul class="submenu">
+                        <li class=""><a href="">Informacje o sklepie</a></li>
+                        <li><a href="">Wysyłka</a></li>
+                        <li><a href="">Sposoby płatności i prowizji</a></li>
+                        <li><a href="">Regulamin</a></li>
+                        <li><a href="">Polityka prywatności</a></li>
+                        <li><a href="">Odstąpienia od umowy</a></li>
+                   </ul>
+                </li>
+                <li class="col-12 col-md-3">Więcej
+                    <ul class="submenu">
+                        <li class=""><a href="">O nas</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Jak dobrać rozmiar</a></li>
+                        <li><a href="">Tabela rozmiarów</a></li>
+                        <li><a href="">Pielęgnacja obuwia</a></li>
+                        <li><a href="">Technologia</a></li>
+                   </ul>
+                </li>
         </section>
-
     </footer>
-    <script>
-    $(document).ready(function(){
-$('#menu').click(function(){
-$('#podmenu').stop().slideToggle(300);
-});
-});
-    </script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/slick.min.js"></script>
+
 </body>
 
 </html>

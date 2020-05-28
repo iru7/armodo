@@ -50,6 +50,29 @@ html {
 }
 
   /*MAIN*/
+  .slider_main {
+    display: flex;
+  }
+  .slider_main .items {
+    
+  }
+  .slider_main .items a span {
+    
+  }
+
+.slider_partners {
+  display: flex;
+}
+.slider_partners items {
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+}
+.slider_partners items img{
+  width: 350px;
+  height: 250px;
+}
+
 #banner a {
   display: flex;
   position: relative;
@@ -69,7 +92,7 @@ html {
   align-items: center;
   text-align: center;
   padding: 15px;
-  color: black;
+  color: #231F20;
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -85,8 +108,10 @@ img {
 }
 
   /*FOTTER*/
+
+  /* DISCOUNTS */
 #discount {
-  background-color: aqua;
+  background-color: #F5F5F5;
   display: flex;
   align-content: center;
   align-items: center;
@@ -102,105 +127,63 @@ img {
   letter-spacing: 0.2em;
   color: black;
   font-weight: 500;
+  text-decoration: none;
 }
 #discount #row_newsletter {
+  color: black;
   font-size: 2em;
+  text-decoration: none;
 }
 #discount .button {
   appearance: button;
   text-transform: uppercase;
-  background-color: black;
+  background-color: #231F20;
   color: white;
   padding: 10px 50px;
+  text-decoration: none;
+  font-weight:1000;
+  letter-spacing: 0.1em;
 }
 
-
-.navigaction {
-  background-color: black;
-}
-.navigaction .class {
-  margin: 0;
-  padding: 0;
+  /* MENU */
+#menu_fotter #menu {
   list-style: none;
-  text-align:center;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  
 }
-.navigaction .class a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.navigaction .class li {
-  position: relative;
+.navigaction {
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  background-color:#231F20;
+  text-align: center;
+  padding-top: 2em;
 }
-.navigaction .class .podmenu {
-  position: absolute;
-  flex-flow: column wrap;
-  display: none;
-}
-
-
-/*
-#menu_fotter {
-  background-color: black;
-}
-#menu_fotter .drop{
+.navigaction > .col-12.col-md-3 { /*jak zmodyfikować tylko class="col-12 col-md-3"*/
   color: white;
-  padding: 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: 10px;
 }
-.dropdown {
-	display: none;
-	position: absolute;
-	background: #fff;
-  box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
-  display: block;
-}
-.mainMenu {
-  text-align: left;
-  margin-right: 30px;
-}
-ul.mainMenu li {
-  list-style-type: none;
-  height: 35px;
-  margin: 0;
-  padding: 15px 2% 0 2%;
-  text-decoration: none;
-  float: left;
-  width: 110px;
-  text-align: center;
-  color: #757575;
-}
-ul.mainMenu li a {
-  display: block;
-  width: 110px;
-  color: #757575;
+.navigaction li a {
+  color: white;
+  font-size: 0.5em;
   text-decoration: none;
 }
-ul.mainMenu li ul {
+.navigaction .submenu {
+  list-style: none;
+}
+.navigaction #menu #submenu a {
+  text-decoration: none;
+}
+#menu_fotter #menu .submenu {
   display: none;
-  padding: 5px;
-  width: 110px;
-  text-align: center;
 }
-@media only screen and (max-width: 1050px) {
-  ul.mainMenu li {
+#menu_fotter #menu .open {
+/*display: block !important;*/
+}
+@media (min-width: 880px) { /*Zrobić żeby na desktopie było domyślnie rozwinięte menu*/
+  #menu_fotter #menu .submenu {
     display: block;
   }
 }
-@media only screen and (max-width: 750px) {
-  ul.mainMenu li {
-    display: block;
-  }
-}
-.list.show {
-  display: block;
-  background-color: #222222;
-  position: absolute;
-}
-
-*/
