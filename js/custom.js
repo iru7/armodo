@@ -1,6 +1,6 @@
 var width = screen.width;
 $(document).ready(function(){
-    if (width < 880)
+    if (width < 980)
         runMobile();
     else
         runDesp();

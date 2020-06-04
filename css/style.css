@@ -55,12 +55,11 @@ img {
   /* --HEADER-- */
 
   /* 1st Bar*/
-header div {
-  display: flex;
+header #bar1 div {
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  
+  display: flex;
 }
 .bar1 {
   background-color: #BB2000;
@@ -91,6 +90,19 @@ header div {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+  /* NAV BAR */
+header nav {
+  padding: 15px;
+}
+header nav .nav_media {
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+}
+header nav .nav_media > * {
+  padding: 15px;
 }
   /* --MAIN-- */
 
@@ -432,5 +444,10 @@ header div {
   }
   #discount #row_newsletter {
     display: none;
+  }
+  #searcher {
+  }
+  nav .nav_media #cart {
+    
   }
 }

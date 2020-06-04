@@ -54,12 +54,12 @@ $(function() {
     });
 });
 
-//slider na properties vertical i ustawia karuzele pionowo!
+//slider na properties vertical - ustawia karuzele pionowo
 
-//mega push (jquery) - do menu a później
+//mega push (jquery) - do menu
 
 //translate Y
 
-//flex-direction:column; obczzaj to
+//flex-direction:column; obczaj to
 
 //box model
